@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:prvandroid="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/relativeLayout2">
+
+        <logdemo.wjj.com.Tiffany.Custom.IconEditText
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_bg"
+            android:textColorHint="#ffffff"
+            widget:hint="@string/user_name"
+            widget:iconSrc="@mipmap/users"
+            widget:isPassword="false"></logdemo.wjj.com.Tiffany.Custom.IconEditText>
+
+        <logdemo.wjj.com.Tiffany.Custom.IconEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/layout_bg"
+            android:textColorHint="#ffffff"
+            widget:hint="@string/password"
+            widget:iconSrc="@mipmap/lock"
+            widget:isPassword="true"></logdemo.wjj.com.Tiffany.Custom.IconEditText>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:text="@string/login"
+        android:id="@+id/login"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:background="@drawable/layout_bg"
+        android:layout_above="@+id/go_to_reg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_to_register"
+        android:id="@+id/go_to_reg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

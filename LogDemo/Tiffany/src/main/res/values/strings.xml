@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Tiffany</string>
+
+
+
+    <string name="user_name">User name</string>
+    <string name="password">Password</string>
+    <string name="Phone">Phone</string>
+    <string name="action_settings">Setting</string>
+    <string name="error_network_time_out">network time out</string>
+    <string name="send_Msg">send Msg</string>
+    <string name="chat">Message</string>
+    <string name="login">Login</string>
+    <string name="go_to_register"> I want to register.</string>
+    <string name="register">register</string>
+    <string name="go_to_login">I want to log in.</string>
+    <string name="error_network_not_available">network not available</string>
+    <string name="error_network_server_busy">network server busy</string>
+
+</resources>
